@@ -1,0 +1,85 @@
+html {
+  font-size: 18px;
+  line-height: 1.4;
+}
+.headBackground {
+  display:flex;
+  background-image: url("./images/glasses-bg.png");
+  height: 30rem;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+}
+.headBackground .title {
+  background-color: cadetblue;
+  display:flex;
+  width:1032px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  height:3.4rem;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.headBackground .title .logo {
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.headBackground .title .logo p {
+  font-family: Helvetica;
+  font-size: 1rem;
+  color: white;
+}
+.headBackground .title .logo img {
+  height: 1.5rem;
+  width:auto;
+  padding-right: 1rem;
+}
+.headBackground .title .menu {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  width:30%;
+}
+.headBackground .title p {
+  padding-right: 2rem;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: Helvetica;
+  font-size: 1rem;
+  color: white;
+}
+.headBackground .container {
+  display:flex;
+  justify-content: flex-end;
+  width:1032px;
+  height:auto;
+  margin-top: 10rem;
+  margin-left: 4rem;
+}
+.headBackground .container .slogan {
+  display: flex;
+  background-color: white;
+  height: 5.2rem;
+  text-align: center;
+  width: 558px;
+}
+.headBackground .container .slogan h1 {
+  font-family: Helvetica;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: black;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
