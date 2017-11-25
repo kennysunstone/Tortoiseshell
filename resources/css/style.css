@@ -179,3 +179,32 @@ html {
   font-family: Helvetica;
   line-height: 1.2;
 }
+.footer {
+  display: flex;
+  justify-content: center;
+}
+.footer .container {
+  display:flex;
+  background-color: azure;
+  align-items: center;
+  text-align: left;
+  width: 960px;
+  height: 9.5rem;
+}
+.footer .container .logo {
+  padding-left: 4rem;
+  padding-right: 1rem;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer .container .logo img {
+  height: 1.5rem;
+  width:auto;
+}
+.footer .container p {
+  font-family: Helvetica;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+}
