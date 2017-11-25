@@ -8,6 +8,8 @@
   </head>
   <body>
     <!-- Header code with two containers-->
+    <!--Some adjustments to margins in all versions to preserve look and feel
+    of redline not just precise dimensions-->
     <div class='headBackground'>
       <!-- Logo and menu in two sub contaoners-->
       <div class='title'>
@@ -15,10 +17,17 @@
           <img src="./resources/css/images/logo-white.png"/>
           <p>Tortoiseshell Optics</p>
         </div>
+        <div class='logo480'>
+          <img src="./resources/css/images/logo-white.png"/>
+        </div>
         <div class='menu'>
           <p>Services</p>
           <p>Products</P>
           <p>Contact</p>
+        </div>
+        <!--Container for sub 480px screens-->
+        <div class='menu480'>
+          <p>Menu</p>
         </div>
       </div>
       <!-- Another container for the slogan - not sure why margins work!-->
@@ -66,6 +75,17 @@
             <p>Delivery</p>
           </div>
         </div>
+      </div>
+      <!--Remaining classes reorganise services section for sub 480px-->
+      <div class='features480'>
+        <img id="paper" src="./resources/css/images/paper-icon.png"/>
+        <p>Comprehensive</p>
+        <p>Exams</p>
+        <img id="ruler" src="./resources/css/images/ruler-icon.png"/>
+        <p>Custom</p>
+        <p>Fittings</p>
+        <img id="truck" src="./resources/css/images/truck-icon.png"/>
+        <p>Fast Delivery</p>
       </div>
   </div>
   <!--Section includes the philosophy and booking details-->

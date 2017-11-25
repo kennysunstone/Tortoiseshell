@@ -1,16 +1,18 @@
 html {
   font-size: 18px;
   line-height: 1.4;
+  font-family: Helvetica;
 }
 .headBackground {
   display:flex;
   background-image: url("./images/glasses-bg.png");
-  height: 30rem;
+  height: 31rem;
   width: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   flex-direction: column;
+  align-items: center;
 }
 .headBackground .title {
   background-color: cadetblue;
@@ -30,8 +32,10 @@ html {
   justify-content: flex-start;
   align-items: center;
 }
+.headBackground .title .logo480 {
+  display: none;
+}
 .headBackground .title .logo p {
-  font-family: Helvetica;
   font-size: 1rem;
   color: white;
 }
@@ -47,6 +51,9 @@ html {
   justify-content: flex-end;
   align-items: center;
   width:30%;
+}
+.headBackground .title .menu480 {
+  display: none;
 }
 .headBackground .title p {
   padding-right: 2rem;
@@ -86,6 +93,9 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.features480 {
+  display: none;
 }
 .imageGrid {
   display:flex;
@@ -202,9 +212,203 @@ html {
   height: 1.5rem;
   width:auto;
 }
-.footer .container p {
+.footer .container .notice p {
   font-family: Helvetica;
   display:flex;
   justify-content: flex-start;
   align-items: center;
 }
+@media only screen and (max-width: 768px) {
+  .headBackground {
+    height: 22rem;
+  }
+  .headBackground .title {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .headBackground .container {
+    width: 100%;
+    height:auto;
+    margin-top: 8rem;
+    margin-left: 0;
+  }
+  .headBackground .container .slogan {
+    width: 396px;
+    height: 4.83rem;
+    margin-right: 2rem;
+  }
+  .headBackground .container .slogan h1 {
+    font-size: 1.33rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
+  }
+  .footer .container {
+    width: 100%;
+  }
+  .imageGrid .container {
+    width: 100%
+  }
+  .textGrid .textContainer {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .headBackground {
+    height: 17rem;
+    width: 100%;
+    background-size: cover;
+  }
+  .headBackground .title {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .headBackground .container {
+    width: 100%;
+    height:auto;
+    margin-top: 8rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .headBackground .title .logo {
+    display: none;
+  }
+  .headBackground .title .logo480 {
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .headBackground .title .logo480 img {
+    height: 1.5rem;
+    width:auto;
+    padding-right: 1rem;
+  }
+  .headBackground .title .menu {
+    display: none;
+  }
+  .headBackground .title .menu480 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    width:30%;
+  }
+  .headBackground .title .menu480 p {
+    padding-right: 2rem;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: Helvetica;
+    font-size: 1rem;
+    color: white;
+  }
+  .headBackground .container .slogan {
+    display: flex;
+    background-color: white;
+    height: 3rem;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  .headBackground .container .slogan h1 {
+    font-family: Helvetica;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.2;
+    color: black;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .imageGrid {
+    display: none;
+  }
+  .textGrid {
+    display: none;
+  }
+  .features480 {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.77rem;
+    margin-bottom: 3.77rem;
+  }
+  .features480 p {
+    font-size: 0.77rem;
+    line-height: 1.4;
+  }
+  #paper {
+    margin-bottom: 1rem;
+  }
+  #ruler {
+    margin-top: 1.54rem;
+    margin-bottom: 1rem;
+  }
+  #truck {
+    margin-top: 1.54rem;
+    margin-bottom: 1rem;
+  }
+  .companyInfo {
+    display:flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .companyInfo .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+    width: 840px;
+  }
+  .companyInfo .container .info {
+    display:flex;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    flex-direction: column;
+    align-items:center;
+    margin-bottom: 4rem;
+  }
+  .companyInfo .container .info .title {
+    display:flex;
+    justify-content: center;
+    background-color: cadetblue;
+    height: 2rem;
+    padding-left: 0;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  .companyInfo .container .info p {
+    font-family: Helvetica;
+    font-size: 0.77rem;
+    line-height: 1.2;
+    width: 90%;
+  }
+  .footer {
+    display: flex;
+  }
+  .footer .container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: azure;
+    padding-top: 4rem;
+    width: 100%;
+    height: 9.5rem;
+  }
+  .footer .container .logo {
+    display:flex;
+    margin-right: 2rem;
+  }
+  .footer .container .logo img {
+    height: 1.5rem;
+  }
+  .footer .container .notice p {
+    display: none;
+  }
