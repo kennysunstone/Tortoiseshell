@@ -69,7 +69,6 @@ html {
   display: flex;
   background-color: white;
   height: 5.2rem;
-  text-align: center;
   width: 558px;
 }
 .headBackground .container .slogan h1 {
@@ -78,8 +77,67 @@ html {
   font-weight: bold;
   line-height: 1.2;
   color: black;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imageGrid {
+  display:flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 3rem;
+}
+.imageGrid .container {
+  display: flex;
+  justify-content: space-between;
+  width: 640px;
+}
+.imageGrid .container .feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  height: 5.6rem;
+}
+.imageGrid .container .feature .box {
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+#paper {
+  width: 3.5rem;
+}
+#ruler {
+  width: 5rem;
+}
+#truck {
+  width: 5rem;
+}
+.textGrid {
+  display:flex;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+.textGrid .textContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 640px;
+  height: 2.8rem;
+}
+.textGrid .textContainer .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+}
+.textGrid .textContainer .description p {
+  font-family: Helvetica;
+  line-height: 1.4;
+  text-align: center;
 }
